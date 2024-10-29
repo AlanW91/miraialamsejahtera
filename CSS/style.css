@@ -11,6 +11,7 @@
   padding-bottom: 0px;
   padding-left: 10px;
   border: 8px ridge burlywood;
+  border-radius: 6px;
 }
 
 .logo-mirai {
@@ -95,17 +96,26 @@
 
 .img-pw img {
   border: 5px ridge burlywood;
+  border-radius: 4px;
   max-width: 100%;
-  min-height: 500px;
+  min-height: 460px;
 }
 
 @media (max-width: 768px) {
   .wlc-box,
   .product-box2 {
-    flex-direction: column; /* Ubah layout menjadi kolom */
-    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+  .style1,
+  .product-item ul {
+    text-align: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
   .img-pw img {
     width: 100%; /* Gambar jadi full width */
   }
@@ -162,6 +172,7 @@
 /* footer */
 .footer {
   background-color: #f5deb3;
+  border-radius: 6px;
   border: 8px ridge burlywood;
   color: rgb(29, 24, 152);
   text-align: center;
@@ -243,8 +254,77 @@
   text-align: justify;
 }
 
+@media (max-width: 768px) {
+  .product,
+  .wood {
+    flex-direction: column; /* Ubah layout menjadi kolom */
+    align-items: flex-start;
+  }
+
+  .wood {
+    text-decoration: underline;
+    text-align: center;
+    list-style: none;
+  }
+
+  .wood-item,
+  .type-of-wood p {
+    text-align: justify;
+  }
+
+  .type-of-wood ul {
+    margin: 0px;
+    padding: 0px;
+    text-wrap: wrap;
+  }
+}
+
 .product-item img {
   border: 5px ridge burlywood;
+  border-radius: 3px;
   width: 300px;
   height: 350px;
+}
+
+/* Gallery */
+
+.gallery {
+  gap: 0px;
+  width: 100%;
+  margin: 0px auto;
+  padding-bottom: 110px;
+  background-color: #efefef;
+}
+
+.gallery-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 34px;
+  color: rgb(29, 24, 152);
+  font-weight: bold;
+}
+
+.gallery-item {
+  overflow: visible;
+  border-radius: 6px;
+  border: 8px ridge burlywood;
+  margin: 10px;
+  width: 50%;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.2s ease; /* Untuk efek zoom saat hover */
+}
+
+.gallery-item:hover img {
+  transform: scale(1.2); /* Efek zoom saat gambar di-hover */
 }
