@@ -1,0 +1,250 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/* header navbar */
+.header {
+  display: flex;
+  background-color: #f5deb3;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  border: 8px ridge burlywood;
+}
+
+.logo-mirai {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.logo-mirai:hover .image-title {
+  opacity: 1;
+}
+
+.header img {
+  height: 120px;
+  background-color: #f5deb3;
+}
+
+.header-title {
+  margin: auto 0%;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.header-title a {
+  text-decoration: none;
+  border-bottom: 3px solid rgb(29, 24, 152);
+  color: rgb(29, 24, 152);
+}
+
+.factory-name {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.speciality {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px;
+  color: black;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(29, 24, 152);
+  font-weight: bold;
+  font-size: 18px;
+  text-wrap: nowrap;
+}
+
+.navbar-toggler {
+  margin-right: 50px;
+}
+
+.navbar a:hover {
+  color: rgb(106, 182, 47);
+}
+
+.icon-size {
+  font-size: 40px;
+}
+
+/* content */
+
+.wlc-box {
+  padding: 15px;
+  background-color: #efefef;
+  display: flex;
+  padding-bottom: 110px;
+}
+
+.wlc-text {
+  font-family: 'sans-serif';
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  padding: 15px 0;
+  color: rgb(29, 24, 152);
+}
+
+.p {
+  padding-left: 40px;
+}
+
+.img-pw img {
+  border: 5px ridge burlywood;
+  max-width: 100%;
+  min-height: 500px;
+}
+
+@media (max-width: 768px) {
+  .wlc-box,
+  .product-box2 {
+    flex-direction: column; /* Ubah layout menjadi kolom */
+    align-items: flex-start;
+  }
+
+  .img-pw img {
+    width: 100%; /* Gambar jadi full width */
+  }
+}
+
+.wlc-p {
+  text-align: justify;
+  padding: 10px;
+}
+
+.img-svlk {
+  text-align: center;
+}
+.img-svlk img {
+  width: 30%;
+  height: 30%;
+}
+
+.about-us {
+  padding: 10px;
+  background-color: #efefef;
+}
+
+.intro {
+  text-align: justify;
+  margin: 0% 5%;
+}
+
+.cp-tabel {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 110px;
+}
+.cp {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(29, 24, 152);
+  text-decoration: underline;
+}
+
+.col-1 {
+  text-align: left;
+  text-wrap: nowrap;
+  padding-right: 10px;
+}
+
+.col-2 {
+  display: inline-block;
+  padding-left: 15px;
+  text-align: left;
+  width: auto;
+}
+
+/* footer */
+.footer {
+  background-color: #f5deb3;
+  border: 8px ridge burlywood;
+  color: rgb(29, 24, 152);
+  text-align: center;
+  width: 100%;
+  height: 110px;
+}
+
+/* contact us */
+
+.contactUs {
+  height: 100%;
+  width: 100%;
+  padding: 80px 80px 490px 80px;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  background-color: #efefef;
+}
+
+.contact-box {
+  text-align: center;
+}
+
+.contact-item1 {
+  color: rgb(29, 24, 152);
+  font-weight: bold;
+  margin: 0px;
+}
+
+.contact-item2 {
+  margin: 5px 10px;
+}
+
+/* our products */
+
+.style1 {
+  font-size: 34px;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 25px 25px;
+  color: rgb(29, 24, 152);
+}
+
+.product-box {
+  padding-bottom: 110px;
+  background-color: #efefef;
+}
+
+.product-box2 {
+  padding: 15px;
+  background-color: #efefef;
+  display: flex;
+  padding: 25px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product,
+.wood {
+  font-weight: bold;
+  font-size: 24px;
+  color: rgb(29, 24, 152);
+  padding-bottom: 10px;
+}
+
+.wood-item {
+  font-weight: bold;
+  color: rgb(29, 24, 152);
+  text-align: justify;
+  list-style-type: none;
+}
+
+.type-of-wood {
+  margin: 25px;
+  padding: 10px;
+  text-wrap: wrap;
+}
+.type-of-wood p {
+  text-align: justify;
+}
+
+.product-item img {
+  border: 5px ridge burlywood;
+  width: 300px;
+  height: 350px;
+}
